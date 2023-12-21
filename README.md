@@ -1,1 +1,1 @@
-Click the link and visit our website : https://github.com/Niloy8787/codemela.com.git
+Click the link and visit our website :  https://niloy8787.github.io/codemela.com/
