@@ -4,18 +4,22 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-        Home || Alasmart - Digital Products Buy Sell Marketplace Laravel Script
-    </title>
+    <title>Home || Alasmart - Digital Products Buy Sell Marketplace Laravel Script</title>
     <!-- fontawesome css -->
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
     <!-- bootstarp css link -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <!-- swiper css link -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- scroll top css -->
+    <link rel="stylesheet" href="assets/css/material-scrolltop.css">
+    <!-- nice select css -->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
     <!-- custom css link -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
@@ -49,27 +53,32 @@
                         </div>
                         <div class="col-lg-5">
                             <div class="content-right">
-                                <ul class="content-menu d-lg-flex align-content-center justify-content-end gap-lg-5">
+                                <ul
+                                    class="content-menu d-flex align-content-center justify-content-lg-end justify-content-center gap-3">
                                     <li class="currency-list">
-                                        <span class="current-currency">$-USD</span>
-                                        <ul class="list">
-                                            <li class="option">$-USD</li>
-                                            <li class="option">৳-BDT</li>
-                                            <li class="option">₹-INR</li>
-                                            <li class="option">₦-NGN</li>
-                                            <li class="option">$-CAD</li>
-                                        </ul>
+                                        <div class="nice-select">
+                                            <span class="current">$-USD</span>
+                                            <ul class="list">
+                                                <li data-value="USD" class="option selected">$-USD</li>
+                                                <li data-value="BDT" class="option">৳-BDT</li>
+                                                <li data-value="INR" class="option">₹-INR</li>
+                                                <li data-value="NGN" class="option">₦-NGN</li>
+                                                <li data-value="CAD" class="option">$-CAD</li>
+                                            </ul>
+                                        </div>
                                     </li>
                                     <li class="language-list">
-                                        <span class="current-language">English</span>
-                                        <ul class="list">
-                                            <li class="option">English</li>
-                                            <li class="option">বাংলা</li>
-                                        </ul>
+                                        <div class="nice-select">
+                                            <span class="current">English</span>
+                                            <ul class="list">
+                                                <li data-value="en" class="option selected">English</li>
+                                                <li data-value="bn" class="option">বাংলা</li>
+                                            </ul>
+                                        </div>
                                     </li>
                                     <li class="user">
                                         <a href="#" class="user-img">
-                                            <img class="img-fluid user-img" src="img/user_icon.png" alt="" />
+                                            <img class="img-fluid user-img" src="assets/img/user_icon.png" alt="" />
                                         </a>
                                         <div class="user-dropdown-menu">
                                             <ul>
@@ -105,14 +114,15 @@
             <nav class="navbar navbar-expand-lg main-menu">
                 <div class="container">
                     <a class="navbar-brand" href="#">
-                        <img class="img-fluid" src="img/logo.png" alt="" />
+                        <img class="img-fluid" src="assets/img/logo.png" alt="" />
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler menu-bar collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <i class="fa-solid fa-bars open-icon" aria-hidden="true"></i>
+                        <i class="fa-solid fa-times close-icon" aria-hidden="true"></i>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class="collapse navbar-collapse collapse-items" id="navbarNavDropdown">
                         <ul class="navbar-nav m-auto">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home <i
@@ -130,7 +140,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Products</a>
+                                <a class="nav-link" href="products.html">Products</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
@@ -166,10 +176,10 @@
                             </li>
                         </ul>
                         <div class="navbar-action">
-                            <ul class="d-lg-flex align-items-center justify-content-end">
+                            <ul class="d-flex align-items-center justify-content-lg-end justify-content-center">
                                 <li>
                                     <a class="cart" href="#">
-                                        <img class="img-fluid" src="img/cart.png" alt="" />
+                                        <img class="img-fluid" src="assets/img/cart.png" alt="" />
                                         <span>0</span>
                                     </a>
                                 </li>
@@ -187,7 +197,7 @@
         <!-- start main -->
         <main>
             <!-- start hero section -->
-            <section class="hero" style="background: url(img/banner.jpg)">
+            <section class="hero" style="background: url(assets/img/banner.jpg)">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 m-auto">
@@ -198,7 +208,7 @@
                                     <i class="fa fa-search"></i>
                                     <button class="btn" type="submit">Search</button>
                                 </form>
-                                <ul class="counter-wraper d-lg-flex flex-wrap justify-content-center">
+                                <ul class="counter-wraper d-lg-flex flex-wrap justify-content-center flex-wrap">
                                     <li>
                                         <span class="counter">34</span>
                                         <span>k+</span>
@@ -238,7 +248,7 @@
                                 <div class="swiper-slide">
                                     <div class="single-category-item">
                                         <div class="category-logo">
-                                            <img class="img-fluid" src="img/audio.png" alt="">
+                                            <img class="img-fluid" src="assets/img/audio.png" alt="">
                                         </div>
                                         <h6><a href="#">Audio</a></h6>
                                         <p>5 Items</p>
@@ -247,7 +257,7 @@
                                 <div class="swiper-slide">
                                     <div class="single-category-item">
                                         <div class="category-logo">
-                                            <img class="img-fluid" src="img/video.png" alt="">
+                                            <img class="img-fluid" src="assets/img/video.png" alt="">
                                         </div>
                                         <h6><a href="#">Video</a></h6>
                                         <p>4 Items</p>
@@ -256,7 +266,7 @@
                                 <div class="swiper-slide">
                                     <div class="single-category-item">
                                         <div class="category-logo">
-                                            <img class="img-fluid" src="img/shopify.png" alt="">
+                                            <img class="img-fluid" src="assets/img/shopify.png" alt="">
                                         </div>
                                         <h6><a href="#">Shopify</a></h6>
                                         <p>4 Items</p>
@@ -265,7 +275,7 @@
                                 <div class="swiper-slide">
                                     <div class="single-category-item">
                                         <div class="category-logo">
-                                            <img class="img-fluid" src="img/woocomerce.png" alt="">
+                                            <img class="img-fluid" src="assets/img/woocomerce.png" alt="">
                                         </div>
                                         <h6><a href="#">WooCommerce</a></h6>
                                         <p>1 Items</p>
@@ -274,7 +284,7 @@
                                 <div class="swiper-slide">
                                     <div class="single-category-item">
                                         <div class="category-logo">
-                                            <img class="img-fluid" src="img/jomla.png" alt="">
+                                            <img class="img-fluid" src="assets/img/jomla.png" alt="">
                                         </div>
                                         <h6><a href="#">Joomla</a></h6>
                                         <p>3 Items</p>
@@ -283,7 +293,7 @@
                                 <div class="swiper-slide">
                                     <div class="single-category-item">
                                         <div class="category-logo">
-                                            <img class="img-fluid" src="img/image.png" alt="">
+                                            <img class="img-fluid" src="assets/img/image.png" alt="">
                                         </div>
                                         <h6><a href="#">Image</a></h6>
                                         <p>3 Items</p>
@@ -292,7 +302,7 @@
                                 <div class="swiper-slide">
                                     <div class="single-category-item">
                                         <div class="category-logo">
-                                            <img class="img-fluid" src="img/javascript.png" alt="">
+                                            <img class="img-fluid" src="assets/img/javascript.png" alt="">
                                         </div>
                                         <h6><a href="#">Javascript</a></h6>
                                         <p>1 Items</p>
@@ -301,7 +311,7 @@
                                 <div class="swiper-slide">
                                     <div class="single-category-item">
                                         <div class="category-logo">
-                                            <img class="img-fluid" src="img/react.png" alt="">
+                                            <img class="img-fluid" src="assets/img/react.png" alt="">
                                         </div>
                                         <h6><a href="#">React Native</a></h6>
                                         <p>2 Items</p>
@@ -315,7 +325,7 @@
             </section>
             <!-- end category section -->
             <!-- start theme gallery section -->
-            <section class="theme-gallery" style="background: url(img/gallery_bg2.jpg);">
+            <section class="theme-gallery" style="background: url(assets/img/gallery_bg2.jpg);">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7 m-auto">
@@ -350,7 +360,7 @@
                         <div class="col-lg-4">
                             <div class="single-gallery-item portfolio-block" id="1">
                                 <div class="gallery-img">
-                                    <img class="img-fluid" src="img/gallery-1.png" alt="">
+                                    <img class="img-fluid" src="assets/img/gallery-1.png" alt="">
                                     <ul class="overlay">
                                         <li><a class="btn btn-1" href="#" target="_blank">Preview</a></li>
                                         <li><a class="btn btn-2" href="#" target="_blank">Buy Now</a></li>
@@ -361,7 +371,7 @@
                                     <a href="#">Saas Landing Software Theme</a>
                                     <p class="category">By <span>Abdullah Mamun</span> In <a class="category"
                                             href="#">Joomla</a></p>
-                                    <ul class="d-lg-flex justify-content-between align-items-center">
+                                    <ul class="d-flex justify-content-between align-items-center">
                                         <li>
                                             <p>
                                                 <i class="fa-solid fa-star text-warning"></i>
@@ -385,7 +395,7 @@
                         <div class="col-lg-4">
                             <div class="single-gallery-item portfolio-block" id="2">
                                 <div class="gallery-img">
-                                    <img class="img-fluid" src="img/gallery-2.png" alt="">
+                                    <img class="img-fluid" src="assets/img/gallery-2.png" alt="">
                                     <ul class="overlay">
                                         <li><a class="btn btn-1" href="#" target="_blank">Preview</a></li>
                                         <li><a class="btn btn-2" href="#" target="_blank">Buy Now</a></li>
@@ -396,7 +406,7 @@
                                     <a href="#">Oifolio-Digital Marketing Theme</a>
                                     <p class="category">By <span>John Doe</span> In <a class="category"
                                             href="#">Shopify</a></p>
-                                    <ul class="d-lg-flex justify-content-between align-items-center">
+                                    <ul class="d-flex justify-content-between align-items-center">
                                         <li>
                                             <p>
                                                 <i class="fa-solid fa-star text-warning"></i>
@@ -420,7 +430,7 @@
                         <div class="col-lg-4">
                             <div class="single-gallery-item portfolio-block" id="3">
                                 <div class="gallery-img">
-                                    <img class="img-fluid" src="img/gallery-3.png" alt="">
+                                    <img class="img-fluid" src="assets/img/gallery-3.png" alt="">
                                     <ul class="overlay">
                                         <li><a class="btn btn-1" href="#" target="_blank">Preview</a></li>
                                         <li><a class="btn btn-2" href="#" target="_blank">Buy Now</a></li>
@@ -431,7 +441,7 @@
                                     <a href="#">Apps Premium Landing Theme</a>
                                     <p class="category">By <span>John Doe</span> In <a class="category"
                                             href="#">Shopify</a></p>
-                                    <ul class="d-lg-flex justify-content-between align-items-center">
+                                    <ul class="d-flex justify-content-between align-items-center">
                                         <li>
                                             <p>
                                                 <i class="fa-regular fa-star text-warning"></i>
@@ -457,7 +467,7 @@
                         <div class="col-lg-4">
                             <div class="single-gallery-item">
                                 <div class="gallery-img">
-                                    <img class="img-fluid" src="img/gallery-4.png" alt="">
+                                    <img class="img-fluid" src="assets/img/gallery-4.png" alt="">
                                     <ul class="overlay">
                                         <li><a class="btn btn-1" href="#" target="_blank">Preview</a></li>
                                         <li><a class="btn btn-2" href="#" target="_blank">Buy Now</a></li>
@@ -468,7 +478,7 @@
                                     <a href="#">Single-Branch Restaurant Management Software</a>
                                     <p class="category">By <span>Abdullah Mamun</span> In <a class="category"
                                             href="#">Joomla</a></p>
-                                    <ul class="d-lg-flex justify-content-between align-items-center">
+                                    <ul class="d-flex justify-content-between align-items-center">
                                         <li>
                                             <p>
                                                 <i class="fa-solid fa-star text-warning"></i>
@@ -492,7 +502,7 @@
                         <div class="col-lg-4">
                             <div class="single-gallery-item">
                                 <div class="gallery-img">
-                                    <img class="img-fluid" src="img/gallery-5.png" alt="">
+                                    <img class="img-fluid" src="assets/img/gallery-5.png" alt="">
                                     <ul class="overlay">
                                         <li><a class="btn btn-1" href="#" target="_blank">Preview</a></li>
                                         <li><a class="btn btn-2" href="#" target="_blank">Buy Now</a></li>
@@ -503,7 +513,7 @@
                                     <a href="#">Multi-Branch Restaurant Management Software</a>
                                     <p class="category">By <span>John Doe</span> In <a class="category"
                                             href="#">Shopify</a></p>
-                                    <ul class="d-lg-flex justify-content-between align-items-center">
+                                    <ul class="d-flex justify-content-between align-items-center">
                                         <li>
                                             <p>
                                                 <i class="fa-solid fa-star text-warning"></i>
@@ -527,7 +537,7 @@
                         <div class="col-lg-4">
                             <div class="single-gallery-item">
                                 <div class="gallery-img">
-                                    <img class="img-fluid" src="img/gallery-6.png" alt="">
+                                    <img class="img-fluid" src="assets/img/gallery-6.png" alt="">
                                     <ul class="overlay">
                                         <li><a class="btn btn-1" href="#" target="_blank">Preview</a></li>
                                         <li><a class="btn btn-2" href="#" target="_blank">Buy Now</a></li>
@@ -538,7 +548,7 @@
                                     <a href="#">Minimoll - Fashion eCommerce Flutter App</a>
                                     <p class="category">By <span>John Doe</span> In <a class="category"
                                             href="#">Shopify</a></p>
-                                    <ul class="d-lg-flex justify-content-between align-items-center">
+                                    <ul class="d-flex justify-content-between align-items-center">
                                         <li>
                                             <p>
                                                 <i class="fa-regular fa-star text-warning"></i>
@@ -564,7 +574,7 @@
                         <div class="col-lg-4">
                             <div class="single-gallery-item">
                                 <div class="gallery-img">
-                                    <img class="img-fluid" src="img/gallery-7.png" alt="">
+                                    <img class="img-fluid" src="assets/img/gallery-7.png" alt="">
                                     <ul class="overlay">
                                         <li><a class="btn btn-1" href="#" target="_blank">Preview</a></li>
                                         <li><a class="btn btn-2" href="#" target="_blank">Buy Now</a></li>
@@ -575,7 +585,7 @@
                                     <a href="#">Shopo eCommerce - Multivendor eCommerce Flutter Seller App</a>
                                     <p class="category">By <span>Abdullah Mamun</span> In <a class="category"
                                             href="#">Joomla</a></p>
-                                    <ul class="d-lg-flex justify-content-between align-items-center">
+                                    <ul class="d-flex justify-content-between align-items-center">
                                         <li>
                                             <p>
                                                 <i class="fa-regular fa-star text-warning"></i>
@@ -599,7 +609,7 @@
                         <div class="col-lg-4">
                             <div class="single-gallery-item">
                                 <div class="gallery-img">
-                                    <img class="img-fluid" src="img/gallery-8.png" alt="">
+                                    <img class="img-fluid" src="assets/img/gallery-8.png" alt="">
                                     <ul class="overlay">
                                         <li><a class="btn btn-1" href="#" target="_blank">Preview</a></li>
                                         <li><a class="btn btn-2" href="#" target="_blank">Buy Now</a></li>
@@ -610,7 +620,7 @@
                                     <a href="#">Aabcserv - Multivendor On-Demand Service &amp; Handyman Marketplace</a>
                                     <p class="category">By <span>John Doe</span> In <a class="category"
                                             href="#">Shopify</a></p>
-                                    <ul class="d-lg-flex justify-content-between align-items-center">
+                                    <ul class="d-flex justify-content-between align-items-center">
                                         <li>
                                             <p>
                                                 <i class="fa-regular fa-star text-warning"></i>
@@ -634,7 +644,7 @@
                         <div class="col-lg-4">
                             <div class="single-gallery-item">
                                 <div class="gallery-img">
-                                    <img class="img-fluid" src="img/gallery-9.png" alt="">
+                                    <img class="img-fluid" src="assets/img/gallery-9.png" alt="">
                                     <ul class="overlay">
                                         <li><a class="btn btn-1" href="#" target="_blank">Preview</a></li>
                                         <li><a class="btn btn-2" href="#" target="_blank">Buy Now</a></li>
@@ -645,7 +655,7 @@
                                     <a href="#">School Management Inventory Laravel Software</a>
                                     <p class="category">By <span>John Doe</span> In <a class="category"
                                             href="#">Shopify</a></p>
-                                    <ul class="d-lg-flex justify-content-between align-items-center">
+                                    <ul class="d-flex justify-content-between align-items-center">
                                         <li>
                                             <p>
                                                 <i class="fa-regular fa-star text-warning"></i>
@@ -673,7 +683,7 @@
             <!-- start trending section -->
             <section class="trending-section">
                 <div class="trending-bg">
-                    <img class="img-fluid" src="img/trendy_theme_bg.jpg" alt="">
+                    <img class="img-fluid" src="assets/img/trendy_theme_bg.jpg" alt="">
                 </div>
                 <div class="container">
                     <div class="trending-headings">
@@ -692,13 +702,13 @@
                                                         <div class="col-lg-6">
                                                             <div class="trending-box">
                                                                 <div class="box-image">
-                                                                    <img class="img-fluid" src="img/tb-1.png" alt="">
+                                                                    <img class="img-fluid" src="assets/img/tb-1.png" alt="">
                                                                 </div>
                                                                 <div class="box-text">
                                                                     <a href="#">Saas Landing Software Theme</a>
                                                                     <p><span>By</span> Abdullah Mamun</p>
                                                                     <ul
-                                                                        class="d-lg-flex justify-content-between align-items-center">
+                                                                        class="d-flex justify-content-between align-items-center">
                                                                         <li>
                                                                             <span class="sale">
                                                                                 <i class="fa-solid fa-download"></i>
@@ -716,13 +726,13 @@
                                                         <div class="col-lg-6">
                                                             <div class="trending-box">
                                                                 <div class="box-image">
-                                                                    <img class="img-fluid" src="img/tb-2.png" alt="">
+                                                                    <img class="img-fluid" src="assets/img/tb-2.png" alt="">
                                                                 </div>
                                                                 <div class="box-text">
                                                                     <a href="#">Oifolio-Digital Marketing Theme</a>
                                                                     <p><span>By</span> John Doe</p>
                                                                     <ul
-                                                                        class="d-lg-flex justify-content-between align-items-center">
+                                                                        class="d-flex justify-content-between align-items-center">
                                                                         <li>
                                                                             <span class="sale">
                                                                                 <i class="fa-solid fa-download"></i>
@@ -740,13 +750,13 @@
                                                         <div class="col-lg-6">
                                                             <div class="trending-box">
                                                                 <div class="box-image">
-                                                                    <img class="img-fluid" src="img/tb-3.png" alt="">
+                                                                    <img class="img-fluid" src="assets/img/tb-3.png" alt="">
                                                                 </div>
                                                                 <div class="box-text">
                                                                     <a href="#">Apps Premium Landing Theme</a>
                                                                     <p><span>By</span> John Doe</p>
                                                                     <ul
-                                                                        class="d-lg-flex justify-content-between align-items-center">
+                                                                        class="d-flex justify-content-between align-items-center">
                                                                         <li>
                                                                             <span class="sale">
                                                                                 <i class="fa-solid fa-download"></i>
@@ -764,14 +774,14 @@
                                                         <div class="col-lg-6">
                                                             <div class="trending-box">
                                                                 <div class="box-image">
-                                                                    <img class="img-fluid" src="img/tb-4.png" alt="">
+                                                                    <img class="img-fluid" src="assets/img/tb-4.png" alt="">
                                                                 </div>
                                                                 <div class="box-text">
                                                                     <a href="#">Single-Branch Restaurant Management
                                                                         Software</a>
                                                                     <p><span>By</span> Abdullah Mamun</p>
                                                                     <ul
-                                                                        class="d-lg-flex justify-content-between align-items-center">
+                                                                        class="d-flex justify-content-between align-items-center">
                                                                         <li>
                                                                             <span class="sale">
                                                                                 <i class="fa-solid fa-download"></i>
@@ -795,14 +805,14 @@
                                                         <div class="col-lg-6">
                                                             <div class="trending-box">
                                                                 <div class="box-image">
-                                                                    <img class="img-fluid" src="img/tb-5.png" alt="">
+                                                                    <img class="img-fluid" src="assets/img/tb-5.png" alt="">
                                                                 </div>
                                                                 <div class="box-text">
                                                                     <a href="#">Single-Branch Restaurant Management
                                                                         Software</a>
                                                                     <p><span>By</span> Abdullah Mamun</p>
                                                                     <ul
-                                                                        class="d-lg-flex justify-content-between align-items-center">
+                                                                        class="d-flex justify-content-between align-items-center">
                                                                         <li>
                                                                             <span class="sale">
                                                                                 <i class="fa-solid fa-download"></i>
@@ -820,13 +830,14 @@
                                                         <div class="col-lg-6">
                                                             <div class="trending-box">
                                                                 <div class="box-image">
-                                                                    <img class="img-fluid" src="img/tb-6.png" alt="">
+                                                                    <img class="img-fluid" src="assets/img/tb-6.png" alt="">
                                                                 </div>
                                                                 <div class="box-text">
-                                                                    <a href="#">Minimoll - Fashion eCommerce Flutter App</a>
+                                                                    <a href="#">Minimoll - Fashion eCommerce Flutter
+                                                                        App</a>
                                                                     <p><span>By</span> John Doe</p>
                                                                     <ul
-                                                                        class="d-lg-flex justify-content-between align-items-center">
+                                                                        class="d-flex justify-content-between align-items-center">
                                                                         <li>
                                                                             <span class="sale">
                                                                                 <i class="fa-solid fa-download"></i>
@@ -844,13 +855,14 @@
                                                         <div class="col-lg-6">
                                                             <div class="trending-box">
                                                                 <div class="box-image">
-                                                                    <img class="img-fluid" src="img/tb-7.png" alt="">
+                                                                    <img class="img-fluid" src="assets/img/tb-7.png" alt="">
                                                                 </div>
                                                                 <div class="box-text">
-                                                                    <a href="#">Minimoll - Fashion eCommerce Flutter App</a>
+                                                                    <a href="#">Minimoll - Fashion eCommerce Flutter
+                                                                        App</a>
                                                                     <p><span>By</span> John Doe</p>
                                                                     <ul
-                                                                        class="d-lg-flex justify-content-between align-items-center">
+                                                                        class="d-flex justify-content-between align-items-center">
                                                                         <li>
                                                                             <span class="sale">
                                                                                 <i class="fa-solid fa-download"></i>
@@ -868,14 +880,14 @@
                                                         <div class="col-lg-6">
                                                             <div class="trending-box">
                                                                 <div class="box-image">
-                                                                    <img class="img-fluid" src="img/tb-8.png" alt="">
+                                                                    <img class="img-fluid" src="assets/img/tb-8.png" alt="">
                                                                 </div>
                                                                 <div class="box-text">
                                                                     <a href="#">Shopo eCommerce - Multivendor eCommerce
                                                                         Flutter Seller App</a>
                                                                     <p><span>By</span> Abdullah Mamun</p>
                                                                     <ul
-                                                                        class="d-lg-flex justify-content-between align-items-center">
+                                                                        class="d-flex justify-content-between align-items-center">
                                                                         <li>
                                                                             <span class="sale">
                                                                                 <i class="fa-solid fa-download"></i>
@@ -899,14 +911,14 @@
                                                         <div class="col-lg-6">
                                                             <div class="trending-box">
                                                                 <div class="box-image">
-                                                                    <img class="img-fluid" src="img/tb-9.png" alt="">
+                                                                    <img class="img-fluid" src="assets/img/tb-9.png" alt="">
                                                                 </div>
                                                                 <div class="box-text">
                                                                     <a href="#">Shopo eCommerce - Multivendor eCommerce
                                                                         Flutter Seller App</a>
                                                                     <p><span>By</span> Abdullah Mamun</p>
                                                                     <ul
-                                                                        class="d-lg-flex justify-content-between align-items-center">
+                                                                        class="d-flex justify-content-between align-items-center">
                                                                         <li>
                                                                             <span class="sale">
                                                                                 <i class="fa-solid fa-download"></i>
@@ -924,14 +936,15 @@
                                                         <div class="col-lg-6">
                                                             <div class="trending-box">
                                                                 <div class="box-image">
-                                                                    <img class="img-fluid" src="img/tb-10.png" alt="">
+                                                                    <img class="img-fluid" src="assets/img/tb-10.png" alt="">
                                                                 </div>
                                                                 <div class="box-text">
                                                                     <a href="#">Aabcserv - Multivendor On-Demand Service
-                                                                        &amp; Handyman Marketplace Flutter Seller App</a>
+                                                                        &amp; Handyman Marketplace Flutter Seller
+                                                                        App</a>
                                                                     <p><span>By</span> John Doe</p>
                                                                     <ul
-                                                                        class="d-lg-flex justify-content-between align-items-center">
+                                                                        class="d-flex justify-content-between align-items-center">
                                                                         <li>
                                                                             <span class="sale">
                                                                                 <i class="fa-solid fa-download"></i>
@@ -949,14 +962,14 @@
                                                         <div class="col-lg-6">
                                                             <div class="trending-box">
                                                                 <div class="box-image">
-                                                                    <img class="img-fluid" src="img/tb-11.png" alt="">
+                                                                    <img class="img-fluid" src="assets/img/tb-11.png" alt="">
                                                                 </div>
                                                                 <div class="box-text">
                                                                     <a href="#">School Management Inventory Laravel
                                                                         Software</a>
                                                                     <p><span>By</span> John Doe</p>
                                                                     <ul
-                                                                        class="d-lg-flex justify-content-between align-items-center">
+                                                                        class="d-flex justify-content-between align-items-center">
                                                                         <li>
                                                                             <span class="sale">
                                                                                 <i class="fa-solid fa-download"></i>
@@ -974,14 +987,15 @@
                                                         <div class="col-lg-6">
                                                             <div class="trending-box">
                                                                 <div class="box-image">
-                                                                    <img class="img-fluid" src="img/tb-12.png" alt="">
+                                                                    <img class="img-fluid" src="assets/img/tb-12.png" alt="">
                                                                 </div>
                                                                 <div class="box-text">
-                                                                    <a href="#">Artificial intelligence - AI Writer &amp;
+                                                                    <a href="#">Artificial intelligence - AI Writer
+                                                                        &amp;
                                                                         Copywriting Laravel app</a>
                                                                     <p><span>By</span> Abdullah Mamun</p>
                                                                     <ul
-                                                                        class="d-lg-flex justify-content-between align-items-center">
+                                                                        class="d-flex justify-content-between align-items-center">
                                                                         <li>
                                                                             <span class="sale">
                                                                                 <i class="fa-solid fa-download"></i>
@@ -1005,14 +1019,14 @@
                                                         <div class="col-lg-6">
                                                             <div class="trending-box">
                                                                 <div class="box-image">
-                                                                    <img class="img-fluid" src="img/tb-9.png" alt="">
+                                                                    <img class="img-fluid" src="assets/img/tb-9.png" alt="">
                                                                 </div>
                                                                 <div class="box-text">
                                                                     <a href="#">Shopo eCommerce - Multivendor eCommerce
                                                                         Flutter Seller App</a>
                                                                     <p><span>By</span> Abdullah Mamun</p>
                                                                     <ul
-                                                                        class="d-lg-flex justify-content-between align-items-center">
+                                                                        class="d-flex justify-content-between align-items-center">
                                                                         <li>
                                                                             <span class="sale">
                                                                                 <i class="fa-solid fa-download"></i>
@@ -1030,14 +1044,15 @@
                                                         <div class="col-lg-6">
                                                             <div class="trending-box">
                                                                 <div class="box-image">
-                                                                    <img class="img-fluid" src="img/tb-10.png" alt="">
+                                                                    <img class="img-fluid" src="assets/img/tb-10.png" alt="">
                                                                 </div>
                                                                 <div class="box-text">
                                                                     <a href="#">Aabcserv - Multivendor On-Demand Service
-                                                                        &amp; Handyman Marketplace Flutter Seller App</a>
+                                                                        &amp; Handyman Marketplace Flutter Seller
+                                                                        App</a>
                                                                     <p><span>By</span> John Doe</p>
                                                                     <ul
-                                                                        class="d-lg-flex justify-content-between align-items-center">
+                                                                        class="d-flex justify-content-between align-items-center">
                                                                         <li>
                                                                             <span class="sale">
                                                                                 <i class="fa-solid fa-download"></i>
@@ -1055,14 +1070,14 @@
                                                         <div class="col-lg-6">
                                                             <div class="trending-box">
                                                                 <div class="box-image">
-                                                                    <img class="img-fluid" src="img/tb-11.png" alt="">
+                                                                    <img class="img-fluid" src="assets/img/tb-11.png" alt="">
                                                                 </div>
                                                                 <div class="box-text">
                                                                     <a href="#">School Management Inventory Laravel
                                                                         Software</a>
                                                                     <p><span>By</span> John Doe</p>
                                                                     <ul
-                                                                        class="d-lg-flex justify-content-between align-items-center">
+                                                                        class="d-flex justify-content-between align-items-center">
                                                                         <li>
                                                                             <span class="sale">
                                                                                 <i class="fa-solid fa-download"></i>
@@ -1080,14 +1095,15 @@
                                                         <div class="col-lg-6">
                                                             <div class="trending-box">
                                                                 <div class="box-image">
-                                                                    <img class="img-fluid" src="img/tb-12.png" alt="">
+                                                                    <img class="img-fluid" src="assets/img/tb-12.png" alt="">
                                                                 </div>
                                                                 <div class="box-text">
-                                                                    <a href="#">Artificial intelligence - AI Writer &amp;
+                                                                    <a href="#">Artificial intelligence - AI Writer
+                                                                        &amp;
                                                                         Copywriting Laravel app</a>
                                                                     <p><span>By</span> Abdullah Mamun</p>
                                                                     <ul
-                                                                        class="d-lg-flex justify-content-between align-items-center">
+                                                                        class="d-flex justify-content-between align-items-center">
                                                                         <li>
                                                                             <span class="sale">
                                                                                 <i class="fa-solid fa-download"></i>
@@ -1111,13 +1127,14 @@
                                                         <div class="col-lg-6">
                                                             <div class="trending-box">
                                                                 <div class="box-image">
-                                                                    <img class="img-fluid" src="img/tb-13.png" alt="">
+                                                                    <img class="img-fluid" src="assets/img/tb-13.png" alt="">
                                                                 </div>
                                                                 <div class="box-text">
-                                                                    <a href="#">Travel Visa Management Laravel Software</a>
+                                                                    <a href="#">Travel Visa Management Laravel
+                                                                        Software</a>
                                                                     <p><span>By</span> Abdullah Mamun</p>
                                                                     <ul
-                                                                        class="d-lg-flex justify-content-between align-items-center">
+                                                                        class="d-flex justify-content-between align-items-center">
                                                                         <li>
                                                                             <span class="sale">
                                                                                 <i class="fa-solid fa-download"></i>
@@ -1135,14 +1152,15 @@
                                                         <div class="col-lg-6">
                                                             <div class="trending-box">
                                                                 <div class="box-image">
-                                                                    <img class="img-fluid" src="img/tb-14.png" alt="">
+                                                                    <img class="img-fluid" src="assets/img/tb-14.png" alt="">
                                                                 </div>
                                                                 <div class="box-text">
-                                                                    <a href="#">Express - Grocery Shop management Laravel
+                                                                    <a href="#">Express - Grocery Shop management
+                                                                        Laravel
                                                                         Software</a>
                                                                     <p><span>By</span> John Doe</p>
                                                                     <ul
-                                                                        class="d-lg-flex justify-content-between align-items-center">
+                                                                        class="d-flex justify-content-between align-items-center">
                                                                         <li>
                                                                             <span class="sale">
                                                                                 <i class="fa-solid fa-download"></i>
@@ -1160,10 +1178,11 @@
                                                         <div class="col-lg-6">
                                                             <div class="trending-box">
                                                                 <div class="box-image">
-                                                                    <img class="img-fluid" src="img/tb-15.png" alt="">
+                                                                    <img class="img-fluid" src="assets/img/tb-15.png" alt="">
                                                                 </div>
                                                                 <div class="box-text">
-                                                                    <a href="#">Finance Company – Laravel Money Management
+                                                                    <a href="#">Finance Company – Laravel Money
+                                                                        Management
                                                                         App</a>
                                                                     <p><span>By</span> John Doe</p>
                                                                     <ul
@@ -1185,14 +1204,14 @@
                                                         <div class="col-lg-6">
                                                             <div class="trending-box">
                                                                 <div class="box-image">
-                                                                    <img class="img-fluid" src="img/tb-16.png" alt="">
+                                                                    <img class="img-fluid" src="assets/img/tb-16.png" alt="">
                                                                 </div>
                                                                 <div class="box-text">
                                                                     <a href="#">Financial Corporation – Flutter Money
                                                                         Management App</a>
                                                                     <p><span>By</span> Abdullah Mamun</p>
                                                                     <ul
-                                                                        class="d-lg-flex justify-content-between align-items-center">
+                                                                        class="d-flex justify-content-between align-items-center">
                                                                         <li>
                                                                             <span class="sale">
                                                                                 <i class="fa-solid fa-download"></i>
@@ -1216,14 +1235,14 @@
                                                         <div class="col-lg-6">
                                                             <div class="trending-box">
                                                                 <div class="box-image">
-                                                                    <img class="img-fluid" src="img/tb-17.png" alt="">
+                                                                    <img class="img-fluid" src="assets/img/tb-17.png" alt="">
                                                                 </div>
                                                                 <div class="box-text">
                                                                     <a href="#">Shopo eCommerce - Multivendor eCommerce
                                                                         Flutter Seller App</a>
                                                                     <p><span>By</span> Abdullah Mamun</p>
                                                                     <ul
-                                                                        class="d-lg-flex justify-content-between align-items-center">
+                                                                        class="d-flex justify-content-between align-items-center">
                                                                         <li>
                                                                             <span class="sale">
                                                                                 <i class="fa-solid fa-download"></i>
@@ -1241,14 +1260,15 @@
                                                         <div class="col-lg-6">
                                                             <div class="trending-box">
                                                                 <div class="box-image">
-                                                                    <img class="img-fluid" src="img/tb-18.png" alt="">
+                                                                    <img class="img-fluid" src="assets/img/tb-18.png" alt="">
                                                                 </div>
                                                                 <div class="box-text">
                                                                     <a href="#">Aabcserv - Multivendor On-Demand Service
-                                                                        &amp; Handyman Marketplace Flutter Seller App</a>
+                                                                        &amp; Handyman Marketplace Flutter Seller
+                                                                        App</a>
                                                                     <p><span>By</span> John Doe</p>
                                                                     <ul
-                                                                        class="d-lg-flex justify-content-between align-items-center">
+                                                                        class="d-flex justify-content-between align-items-center">
                                                                         <li>
                                                                             <span class="sale">
                                                                                 <i class="fa-solid fa-download"></i>
@@ -1266,14 +1286,14 @@
                                                         <div class="col-lg-6">
                                                             <div class="trending-box">
                                                                 <div class="box-image">
-                                                                    <img class="img-fluid" src="img/tb-19.png" alt="">
+                                                                    <img class="img-fluid" src="assets/img/tb-19.png" alt="">
                                                                 </div>
                                                                 <div class="box-text">
                                                                     <a href="#">School Management Inventory Laravel
                                                                         Software</a>
                                                                     <p><span>By</span> John Doe</p>
                                                                     <ul
-                                                                        class="d-lg-flex justify-content-between align-items-center">
+                                                                        class="d-flex justify-content-between align-items-center">
                                                                         <li>
                                                                             <span class="sale">
                                                                                 <i class="fa-solid fa-download"></i>
@@ -1291,14 +1311,15 @@
                                                         <div class="col-lg-6">
                                                             <div class="trending-box">
                                                                 <div class="box-image">
-                                                                    <img class="img-fluid" src="img/tb-19.png" alt="">
+                                                                    <img class="img-fluid" src="assets/img/tb-19.png" alt="">
                                                                 </div>
                                                                 <div class="box-text">
-                                                                    <a href="#">Artificial intelligence - AI Writer &amp;
+                                                                    <a href="#">Artificial intelligence - AI Writer
+                                                                        &amp;
                                                                         Copywriting Laravel app</a>
                                                                     <p><span>By</span> Abdullah Mamun</p>
                                                                     <ul
-                                                                        class="d-lg-flex justify-content-between align-items-center">
+                                                                        class="d-flex justify-content-between align-items-center">
                                                                         <li>
                                                                             <span class="sale">
                                                                                 <i class="fa-solid fa-download"></i>
@@ -1324,7 +1345,7 @@
                             <div class="col-lg-4">
                                 <div class="right-theme-content">
                                     <div class="trending-img">
-                                        <img class="img-fluid" src="img/tr-img.jpg" alt="">
+                                        <img class="img-fluid" src="assets/img/tr-img.jpg" alt="">
                                     </div>
                                     <div class="trending-text">
                                         <h6>Lifetime update support.</h6>
@@ -1345,7 +1366,7 @@
                             <div class="col-lg-3">
                                 <div class="single-counter">
                                     <div class="icon">
-                                        <img class="img-fluid" src="img/cIcon-1.png" alt="">
+                                        <img class="img-fluid" src="assets/img/cIcon-1.png" alt="">
                                     </div>
                                     <h2 class="counter">1252</h2>
                                     <p>Total Items</p>
@@ -1354,7 +1375,7 @@
                             <div class="col-lg-3">
                                 <div class="single-counter">
                                     <div class="icon">
-                                        <img class="img-fluid" src="img/cIcon-2.png" alt="">
+                                        <img class="img-fluid" src="assets/img/cIcon-2.png" alt="">
                                     </div>
                                     <h2 class="counter">9892</h2>
                                     <p>Total Sale</p>
@@ -1363,7 +1384,7 @@
                             <div class="col-lg-3">
                                 <div class="single-counter">
                                     <div class="icon">
-                                        <img class="img-fluid" src="img/cIcon-3.png" alt="">
+                                        <img class="img-fluid" src="assets/img/cIcon-3.png" alt="">
                                     </div>
                                     <h2 class="counter">1519</h2>
                                     <p>Total Clients</p>
@@ -1372,7 +1393,7 @@
                             <div class="col-lg-3">
                                 <div class="single-counter">
                                     <div class="icon">
-                                        <img class="img-fluid" src="img/cIcon-4.png" alt="">
+                                        <img class="img-fluid" src="assets/img/cIcon-4.png" alt="">
                                     </div>
                                     <h2 class="counter">854</h2>
                                     <p>Ratings</p>
@@ -1406,7 +1427,7 @@
                             <div class="col-lg-4">
                                 <div class="single-gallery-item portfolio-block" id="1">
                                     <div class="gallery-img">
-                                        <img class="img-fluid" src="img/gallery-1.png" alt="">
+                                        <img class="img-fluid" src="assets/img/gallery-1.png" alt="">
                                         <ul class="overlay">
                                             <li><a class="btn btn-1" href="#" target="_blank">Preview</a></li>
                                             <li><a class="btn btn-2" href="#" target="_blank">Buy Now</a></li>
@@ -1417,7 +1438,7 @@
                                         <a href="#">Saas Landing Software Theme</a>
                                         <p class="category">By <span>Abdullah Mamun</span> In <a class="category"
                                                 href="#">Joomla</a></p>
-                                        <ul class="d-lg-flex justify-content-between align-items-center">
+                                        <ul class="d-flex justify-content-between align-items-center">
                                             <li>
                                                 <p>
                                                     <i class="fa-solid fa-star text-warning"></i>
@@ -1441,7 +1462,7 @@
                             <div class="col-lg-4">
                                 <div class="single-gallery-item portfolio-block" id="2">
                                     <div class="gallery-img">
-                                        <img class="img-fluid" src="img/gallery-2.png" alt="">
+                                        <img class="img-fluid" src="assets/img/gallery-2.png" alt="">
                                         <ul class="overlay">
                                             <li><a class="btn btn-1" href="#" target="_blank">Preview</a></li>
                                             <li><a class="btn btn-2" href="#" target="_blank">Buy Now</a></li>
@@ -1452,7 +1473,7 @@
                                         <a href="#">Oifolio-Digital Marketing Theme</a>
                                         <p class="category">By <span>John Doe</span> In <a class="category"
                                                 href="#">Shopify</a></p>
-                                        <ul class="d-lg-flex justify-content-between align-items-center">
+                                        <ul class="d-flex justify-content-between align-items-center">
                                             <li>
                                                 <p>
                                                     <i class="fa-solid fa-star text-warning"></i>
@@ -1476,7 +1497,7 @@
                             <div class="col-lg-4">
                                 <div class="single-gallery-item portfolio-block" id="3">
                                     <div class="gallery-img">
-                                        <img class="img-fluid" src="img/gallery-3.png" alt="">
+                                        <img class="img-fluid" src="assets/img/gallery-3.png" alt="">
                                         <ul class="overlay">
                                             <li><a class="btn btn-1" href="#" target="_blank">Preview</a></li>
                                             <li><a class="btn btn-2" href="#" target="_blank">Buy Now</a></li>
@@ -1487,7 +1508,7 @@
                                         <a href="#">Apps Premium Landing Theme</a>
                                         <p class="category">By <span>John Doe</span> In <a class="category"
                                                 href="#">Shopify</a></p>
-                                        <ul class="d-lg-flex justify-content-between align-items-center">
+                                        <ul class="d-flex justify-content-between align-items-center">
                                             <li>
                                                 <p>
                                                     <i class="fa-regular fa-star text-warning"></i>
@@ -1514,7 +1535,7 @@
             </div>
             <!-- end feature section -->
             <!-- start templete section -->
-            <section class="templete-section" style="background: url(img/template_bg.jpg);">
+            <section class="templete-section" style="background: url(assets/img/template_bg.jpg);">
                 <div class="container">
                     <div class="headings">
                         <h6>From multipurpose themes to niche templates</h6>
@@ -1525,40 +1546,44 @@
                             <div class="col-lg-3">
                                 <div class="single-templete-item">
                                     <div class="icon">
-                                        <img class="img-fluid" src="img/templete-1.png" alt="">
+                                        <img class="img-fluid" src="assets/img/templete-1.png" alt="">
                                     </div>
                                     <h5>Graphic Design</h5>
-                                    <p>There are many variationts of passages Lorem Ipsum available, but the majorit have suffered alteration</p>
+                                    <p>There are many variationts of passages Lorem Ipsum available, but the majorit
+                                        have suffered alteration</p>
                                     <a href="#">Learn More <i class="fa fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                             <div class="col-lg-3">
                                 <div class="single-templete-item">
                                     <div class="icon">
-                                        <img class="img-fluid" src="img/templete-2.png" alt="">
+                                        <img class="img-fluid" src="assets/img/templete-2.png" alt="">
                                     </div>
                                     <h5>Friendly Our Support</h5>
-                                    <p>There are many variationts of passages Lorem Ipsum available, but the majorit have suffered alteration</p>
+                                    <p>There are many variationts of passages Lorem Ipsum available, but the majorit
+                                        have suffered alteration</p>
                                     <a href="#">Learn More <i class="fa fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                             <div class="col-lg-3">
                                 <div class="single-templete-item">
                                     <div class="icon">
-                                        <img class="img-fluid" src="img/templete-3.png" alt="">
+                                        <img class="img-fluid" src="assets/img/templete-3.png" alt="">
                                     </div>
                                     <h5>Web & App Design</h5>
-                                    <p>There are many variationts of passages Lorem Ipsum available, but the majorit have suffered alteration</p>
+                                    <p>There are many variationts of passages Lorem Ipsum available, but the majorit
+                                        have suffered alteration</p>
                                     <a href="#">Learn More <i class="fa fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                             <div class="col-lg-3">
                                 <div class="single-templete-item">
                                     <div class="icon">
-                                        <img class="img-fluid" src="img/templete-4.png" alt="">
+                                        <img class="img-fluid" src="assets/img/templete-4.png" alt="">
                                     </div>
                                     <h5>Web & App Design</h5>
-                                    <p>There are many variationts of passages Lorem Ipsum available, but the majorit have suffered alteration</p>
+                                    <p>There are many variationts of passages Lorem Ipsum available, but the majorit
+                                        have suffered alteration</p>
                                     <a href="#">Learn More <i class="fa fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -1575,7 +1600,7 @@
                             <div class="col-lg-6">
                                 <div class="content-left">
                                     <div class="download-img">
-                                        <img class="img-fluid" src="img/download.png" alt="">
+                                        <img class="img-fluid" src="assets/img/download.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -1583,10 +1608,13 @@
                                 <div class="content-right">
                                     <div class="download-text">
                                         <h1>Get Our <span>Mobile App</span> It’s Make easy for your life !</h1>
-                                        <p>Save time with preconfigured environments that alreadyinto into theon the find to find all the prerequisites installed for the news and as you make removes.</p>
+                                        <p>Save time with preconfigured environments that alreadyinto into theon the
+                                            find to find all the prerequisites installed for the news and as you make
+                                            removes.</p>
                                         <ul class="d-flex align-items-center">
-                                            <li><a href="#"><img class="img-fluid" src="img/download_icon_3.jpg" alt=""></a></li>
-                                            <li><a href="#"><img class="img-fluid" src="img/apple.jpg" alt=""></a></li>
+                                            <li><a href="#"><img class="img-fluid" src="assets/img/download_icon_3.jpg"
+                                                        alt=""></a></li>
+                                            <li><a href="#"><img class="img-fluid" src="assets/img/apple.jpg" alt=""></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1597,7 +1625,7 @@
             </section>
             <!-- end app download section -->
             <!-- start customer section -->
-            <section class="customer-section" style="background: url(img/customer_bg.jpg);">
+            <section class="customer-section" style="background: url(assets/img/customer_bg.jpg);">
                 <div class="container">
                     <div class="headings">
                         <h6>Save time with pre-installed software.</h6>
@@ -1607,42 +1635,42 @@
                         <div class="col-lg-2">
                             <div class="customer-logo">
                                 <a href="#" target="_blank">
-                                    <img class="img-fluid" src="img/cl-1.png" alt="">
+                                    <img class="img-fluid" src="assets/img/cl-1.png" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-2">
                             <div class="customer-logo">
                                 <a href="#" target="_blank">
-                                    <img class="img-fluid" src="img/cl-2.png" alt="">
+                                    <img class="img-fluid" src="assets/img/cl-2.png" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-2">
                             <div class="customer-logo">
                                 <a href="#" target="_blank">
-                                    <img class="img-fluid" src="img/cl-3.png" alt="">
+                                    <img class="img-fluid" src="assets/img/cl-3.png" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-2">
                             <div class="customer-logo">
                                 <a href="#" target="_blank">
-                                    <img class="img-fluid" src="img/cl-4.png" alt="">
+                                    <img class="img-fluid" src="assets/img/cl-4.png" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-2">
                             <div class="customer-logo">
                                 <a href="#" target="_blank">
-                                    <img class="img-fluid" src="img/cl-5.png" alt="">
+                                    <img class="img-fluid" src="assets/img/cl-5.png" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-2">
                             <div class="customer-logo">
                                 <a href="#" target="_blank">
-                                    <img class="img-fluid" src="img/cl-6.png" alt="">
+                                    <img class="img-fluid" src="assets/img/cl-6.png" alt="">
                                 </a>
                             </div>
                         </div>
@@ -1651,33 +1679,33 @@
                         <div class="col-lg-2">
                             <div class="customer-logo">
                                 <a href="#" target="_blank">
-                                    <img class="img-fluid" src="img/cl-7.png" alt="">
+                                    <img class="img-fluid" src="assets/img/cl-7.png" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-2">
                             <div class="customer-logo">
                                 <a href="#" target="_blank">
-                                    <img class="img-fluid" src="img/cl-8.png" alt="">
+                                    <img class="img-fluid" src="assets/img/cl-8.png" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-2">
                             <div class="customer-logo">
                                 <a href="#" target="_blank">
-                                    <img class="img-fluid" src="img/cl-9.png" alt="">
+                                    <img class="img-fluid" src="assets/img/cl-9.png" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-2">
                             <div class="customer-logo">
                                 <a href="#" target="_blank">
-                                    <img class="img-fluid" src="img/cl-10.png" alt="">
+                                    <img class="img-fluid" src="assets/img/cl-10.png" alt="">
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="customer-offer" style="background: url(img/subs-bg.jpg);">
+                    <div class="customer-offer" style="background: url(assets/img/subs-bg.jpg);">
                         <div class="offer-left">
                             <p>Check our software <span>Megapack worth $565 for Only $39.</span></p>
                             <span class="support">Lifetime update and 6 months support.</span>
@@ -1689,20 +1717,258 @@
                 </div>
             </section>
             <!-- end customer section -->
+            <!-- start blog section -->
+            <div class="blog-section">
+                <div class="container">
+                    <div class="headings">
+                        <h6>Latest News</h6>
+                        <h1>Latest from Blog</h1>
+                    </div>
+                    <div class="main-content">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="single-blog-item">
+                                    <div class="blog-img">
+                                        <img class="img-fluid" src="assets/img/blog-1.jpg" alt="">
+                                    </div>
+                                    <div class="blog-text">
+                                        <a class="date" href="#">23 Sep</a>
+                                        <a class="title" href="#">Group Of People Working Out Business Plan In An
+                                            Office.</a>
+                                        <p class="description">In a bustling office nestled within a sleek, modern
+                                            skyscraper, a dynamic group of individuals is hard at work,
+                                            collaborating fervently to craft a meticulously detailed business plan.
+                                        </p>
+                                        <ul class="d-flex justify-content-between align-items-center">
+                                            <li class="d-flex align-items-center">
+                                                <img class="img-fluid" src="assets/img/john.jpg" alt="">
+                                                <p><span>By</span> John Doe </p>
+                                            </li>
+                                            <li><a href="#">Read More</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="single-blog-item">
+                                    <div class="blog-img">
+                                        <img class="img-fluid" src="assets/img/blog-2.jpg" alt="">
+                                    </div>
+                                    <div class="blog-text">
+                                        <a class="date" href="#">23 Sep</a>
+                                        <a class="title" href="#">System Developers Analyzing Code On Wall
+                                            Screen.</a>
+                                        <p class="description">In this bustling, state-of-the-art development
+                                            workspace, a team of highly skilled system developers is engaged in an
+                                            in-depth analysis of intricate lines of code projected onto a vast wall
+                                            screen.</p>
+                                        <ul class="d-flex justify-content-between align-items-center">
+                                            <li class="d-flex align-items-center">
+                                                <img class="img-fluid" src="assets/img/john.jpg" alt="">
+                                                <p><span>By</span> John Doe </p>
+                                            </li>
+                                            <li><a href="#">Read More</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="single-blog-item">
+                                    <div class="blog-img">
+                                        <img class="img-fluid" src="assets/img/blog-3.jpg" alt="">
+                                    </div>
+                                    <div class="blog-text">
+                                        <a class="date" href="#">23 Sep</a>
+                                        <a class="title" href="#">A Beginner's Guide to Digital Finance</a>
+                                        <p class="description">In this bustling, state-of-the-art development
+                                            workspace, a team of highly skilled system developers is engaged in an
+                                            in-depth analysis of intricate lines of code projected onto a vast wall
+                                            screen.</p>
+                                        <ul class="d-flex justify-content-between align-items-center">
+                                            <li class="d-flex align-items-center">
+                                                <img class="img-fluid" src="assets/img/john.jpg" alt="">
+                                                <p><span>By</span> John Doe </p>
+                                            </li>
+                                            <li><a href="#">Read More</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end blog section -->
         </main>
         <!-- end main -->
+
+        <!-- start footer -->
+        <footer class="footer" style="background: url(assets/img/footer_bg.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="subscriber-content" style="background: url(assets/img/subcribe.jpg);">
+                            <div class="subscriber-text">
+                                <h2>Subscribe Now</h2>
+                                <p>Get the updates, offers, tips and enhance your page building experience</p>
+                            </div>
+                            <form action="#" class="form-submit">
+                                <input type="text" placeholder="Enter your email address">
+                                <button class="btn">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-4">
+                            <div class="footer-content">
+                                <a class="footer-logo" href="#">
+                                    <img class="img-fluid" src="assets/img/footer-logo.png" alt="">
+                                </a>
+                                <p class="description">
+                                    We don’t take ourselves too seriously seriously enough ensure we’re creating the
+                                    best product and experienc our customer. I feel like help company name the same. Our
+                                    best-in-class WordPres solution with additional as Corporate clients and leisure
+                                    traveler
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="footer-content">
+                                <h4>Support</h4>
+                                <ul>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Our Blog</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="footer-content">
+                                <h4>Quick Link</h4>
+                                <ul>
+                                    <li><a href="#">My Profile</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Registration</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="footer-content">
+                                <h4>Important Link</h4>
+                                <ul>
+                                    <li><a href="#">Become an author</a></li>
+                                    <li><a href="#">Terms &amp; Conditions</a></li>
+                                    <li><a href="#">Our product</a></li>
+                                    <li><a href="#">Cart page</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-lg-6">
+                            <ul class="d-flex align-items-center">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-pinterest"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-behance"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-google-plus-g"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="footer-counter">
+                                <ul class="d-lg-flex align-items-center justify-content-end">
+                                    <li>
+                                        <p>Active Customers</p>
+                                        <h6 class="counter">2</h6>
+                                    </li>
+                                    <li>
+                                        <p>Total Sold Item</p>
+                                        <h6 class="counter">18</h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="copyright-text">
+                                <p>©2023 Quomodosoft All rights reserved</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="payment-wrap d-lg-flex justify-content-end flex-wrap">
+                                <div class="payment-img">
+                                    <img class="img-fluid" src="assets/img/payment.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+
+        <!-- scroll top btn -->
+        <div class="material-scrolltop">
+            <div class="meterial-btn">
+                <p>Up to Top</p>
+                <span><i class="fa fa-angle-up"></i></span>
+            </div>
+        </div>
+
         <!-- end page wrapper -->
-        <!-- jquery script link  -->
-        <script src="js/jquery-3.7.1.js"></script>
-        <script src="//code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-        <script src="category-filter.js"></script>
-        <script src="js/swiper-bundle.min.js"></script>
+        <!-- jquery script file  -->
+        <script src="assets/js/jquery-3.7.1.js"></script>
+        <!-- scroll top script file-->
+        <script src="assets/js/material-scrolltop.js"></script>
+        <!-- swiper script file -->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <!-- counter script file-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+        <!-- nice select file -->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
         <!-- bootstarp script link -->
-        <script src="js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
         <!-- custom js file -->
-        <script src="js/main.js"></script>
+        <script src="assets/js/main.js"></script>
 </body>
 
 </html>
