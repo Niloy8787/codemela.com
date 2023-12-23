@@ -79,4 +79,7 @@ $(document).ready(function () {
             },
         },
     });
+
+        // // product filter slider
+        $(".slider").slider({ range: true });
 });
